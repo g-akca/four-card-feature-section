@@ -8,17 +8,14 @@
     --white-color: hsl(0, 0%, 100%);
 }
 
-html {
-    background-color: #FAFAFA;
-}
-
 body {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     color: var(--grey-color1);
+    background-color: #FAFAFA;
     display: flex;
     justify-content: center;
-    padding: 50px 24px 0;
+    padding: 50px 24px;
 }
 
 main {
@@ -113,7 +110,7 @@ main {
 
 @media screen and (min-width: 768px) {
     body {
-        padding: 64px 24px 0;
+        padding: 64px 24px;
     }
 
     #hero h1, #hero h2 {
@@ -131,7 +128,7 @@ main {
 
 @media screen and (min-width: 1380px) {
     body {
-        padding: 90px 24px 0;
+        padding: 90px 24px;
     }
 
     #hero h1, #hero h2 {
