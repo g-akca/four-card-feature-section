@@ -40,3 +40,29 @@ body {
 #hero p {
     line-height: 140%;
 }
+
+#card-container {
+    margin-top: 60px;
+    display: grid;
+    row-gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 350px;
+    padding: 32px;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 135%;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 160%;
+    color: var(--grey-color2);
+}
