@@ -11,4 +11,32 @@
 body {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    background-color: var(--white-color);
+    color: var(--grey-color1);
+    display: flex;
+    justify-content: center;
+    padding: 50px 24px;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero h1, #hero h2 {
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+    margin: 0;
+}
+
+#hero h1 {
+    font-weight: 200;
+}
+
+#hero h2 {
+    font-weight: 600;
+}
+
+#hero p {
+    line-height: 140%;
 }
