@@ -11,7 +11,7 @@
 body {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--white-color);
+    background-color: #FAFAFA;
     color: var(--grey-color1);
     display: flex;
     justify-content: center;
@@ -51,7 +51,7 @@ main {
 #card-container {
     margin-top: 60px;
     display: grid;
-    row-gap: 30px;
+    row-gap: 32px;
     justify-content: center;
     grid-template-areas:
         "supervisor"
@@ -62,7 +62,7 @@ main {
 
 .card {
     box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 5px;
     box-sizing: border-box;
     max-width: 310px;
     padding: 32px;
@@ -121,13 +121,13 @@ main {
             ". team-builder team-builder ."
             "supervisor supervisor karma karma"
             ". calculator calculator .";
-        column-gap: 30px;
+        column-gap: 32px;
     }
 }
 
 @media screen and (min-width: 1380px) {
     body {
-        padding: 72px 24px 0;
+        padding: 88px 24px 0;
     }
 
     #hero h1, #hero h2 {
@@ -140,7 +140,7 @@ main {
             "supervisor team-builder calculator"
             "supervisor karma calculator"
             ". karma .";
-        column-gap: 30px;
+        column-gap: 32px;
     }
 
     .card {
