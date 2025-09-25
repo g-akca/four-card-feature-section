@@ -18,8 +18,15 @@ body {
     padding: 50px 24px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #hero {
     text-align: center;
+    max-width: 500px;
 }
 
 #hero h1, #hero h2 {
@@ -46,6 +53,11 @@ body {
     display: grid;
     row-gap: 30px;
     justify-content: center;
+    grid-template-areas:
+        "supervisor"
+        "team-builder"
+        "karma"
+        "calculator";
 }
 
 .card {
@@ -77,16 +89,38 @@ body {
 
 #supervisor {
     border-top: var(--cyan-color) 4px solid;
+    grid-area: supervisor;
 }
 
 #team-builder {
     border-top: var(--red-color) 4px solid;
+    grid-area: team-builder;
 }
 
 #karma {
     border-top: var(--orange-color) 4px solid;
+    grid-area: karma;
 }
 
 #calculator {
     border-top: var(--blue-color) 4px solid;
+    grid-area: calculator;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 64px 24px;
+    }
+
+    #hero h1, #hero h2 {
+        font-size: 36px;
+    }
+
+    #card-container {
+        grid-template-areas: 
+            ". team-builder team-builder ."
+            "supervisor supervisor karma karma"
+            ". calculator calculator .";
+        column-gap: 30px;
+    }
 }
