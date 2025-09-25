@@ -8,10 +8,13 @@
     --white-color: hsl(0, 0%, 100%);
 }
 
+html {
+    background-color: #FAFAFA;
+}
+
 body {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    background-color: #FAFAFA;
     color: var(--grey-color1);
     display: flex;
     justify-content: center;
@@ -65,7 +68,8 @@ main {
     border-radius: 5px;
     box-sizing: border-box;
     max-width: 310px;
-    padding: 32px;
+    padding: 30px 32px 32px;
+    background-color: var(--white-color);
 }
 
 .card h2 {
@@ -127,7 +131,7 @@ main {
 
 @media screen and (min-width: 1380px) {
     body {
-        padding: 88px 24px 0;
+        padding: 90px 24px 0;
     }
 
     #hero h1, #hero h2 {
